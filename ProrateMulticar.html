@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Prorate Multicar </title>
+
+	<meta charset="utf-8">
+
+	<link type="text/css"  rel="stylesheet" href= "ProrateMulticarStyle.css"> </link> 
+	<script type="text/javascript" src = "ProrateMulticarCalc.js"> </script> 
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+	<div id = "main">
+
+
+		<header>
+
+			<div class = "presentation-prorate">
+
+				<h1 class = "logo-text" id = "prorate-logo">Prorate</h1>
+			</div>
+
+
+			<div class = "logo">
+		    <img id = "logo-img" src = "car-logo.png"  alt="car logo"> </img>
+
+			</div>
+
+           <div class = "presentation-multicar">
+
+				<h1 class = "logo-text"id = "multicar-logo">Multicar</h1>
+			</div>
+
+
+			<div class="prorate-multicar-full-logo-msg">
+				<h1 class = "logo-text" >Prorate Multicar</h1>
+			</div>
+
+		</header> <!-- header -->
+
+
+
+		<div id = "center"> 
+
+			<div class="box-premium">
+
+				<table>
+					<thead class = "cars-boxes-header">
+						<tr>
+							<th class = "box-header-text">Calculate MP/DP of each car</th>
+						</tr>
+						
+					</thead>
+
+					<tbody id = "cars-boxes-body">
+
+						<tr>
+						   <td> <input type="text" id = "car0-default" class = "car" placeholder="Premium"></td>
+						   <td class = "premium-text"> PREMIUM CAR 1 </td>
+						</tr>
+
+						<tr>
+							<td> <input type="text" id = "car1-default" class = "car" placeholder="Premium"></td>
+							<td class = "premium-text"> PREMIUM CAR 2 </td>
+						</tr>
+					</tbody>
+				</table>
+
+        <table>
+			<div class="box-premium-bottons">
+
+				<tr>
+				  <td><button id = "calculateBtn">Calculate</button></td>
+				  <td><button onclick="addCar()" id = "add-car-btn"> Add car </button></td>
+				  <td><button onclick="removeCar()" id = "remove-car-btn">Remove car</button></td>
+				</tr>
+
+		</table>
+	</div>
+</div>
+
+	 
+
+		</div> <!-- center -->
+
+
+
+		<div id = "footer">
+
+		</div> <!-- footer -->
+
+
+
+	</div>  <!-- main -->
+
+</body>
+</html>

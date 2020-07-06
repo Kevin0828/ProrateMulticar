@@ -1,0 +1,406 @@
+
+
+
+
+
+
+body
+{
+	background-color: #cfeeff;
+	margin:0;
+}
+
+#main
+{
+	width: 100%;
+	height: 100%
+}
+
+header
+{
+	background-color: #cfeeff;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 135px;
+	position: relative;
+	margin:0;
+}
+
+img
+{
+	width: 350px;
+	height: 100px;
+}
+
+input
+{
+	height: 40px;
+	border: none;
+    border-bottom: 2px solid green;
+    background-color: #8fb4ff;
+
+  -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+    
+}
+
+input::placeholder
+{
+	text-align: center;
+	color:green;
+}
+
+input::hover
+{
+
+}
+
+input:focus
+{
+	width: 95%;
+	background-color: #cfeeff;
+}
+
+
+
+
+button
+{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+
+
+#footer
+{
+	background-color: #cfeeff;
+    width: 100%;
+	height: 150px;
+	margin: 0;
+}
+
+#center
+{
+	background-color: #8fb4ff;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width: 100%;
+	min-height: 600px;
+	height: auto;
+	display: flex;
+}
+
+
+
+.box-premium
+{
+	width: 100%;
+    margin-top: 50px;
+    margin-left: 30%;
+    float:left;
+}
+
+
+
+.cars-boxes-header
+{
+	border: 1px;
+
+}
+
+.box-header-text
+{
+	font-family: "Lucida Console", Courier, monospace;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size:  25px;
+}
+
+
+.premium-text
+{
+	font-family: "Lucida Console", Courier, monospace;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size:  25px;
+}
+
+.car
+{
+	float:left;
+	margin-left: 0px;
+	width: 80%;
+}
+
+
+
+.logo-text
+{
+    font-family: "Lucida Console", Courier, monospace;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size:  80px;
+}
+
+
+
+.presentation-prorate
+{
+		display:none;
+}
+
+
+.presentation-multicar
+{
+		display:none;
+}
+
+
+
+.prorate-multicar-full-logo-msg
+{
+float: left;
+margin-left: 20%;
+}
+
+ 
+.logo
+{
+    float: left;
+	width: 50%
+	height: 50%;
+	margin-left: 10px;
+	margin-top: 10px;
+	position: relative;
+
+	filter: drop-shadow(8px 8px 10px green);
+}
+
+
+
+@media only screen and (max-width: 1200px)
+{
+	.logo
+	{
+		position: absolute;
+		left: 30%;
+		filter: drop-shadow(10px 10px 10px 10px green);
+ 
+	}
+
+	.box-premium
+    {
+	width: 100%;
+    margin-top: 100px;
+    margin-left: 30%;
+    float:left;
+    }
+
+	.presentation-prorate
+	{
+		float: left;
+		margin-left: 15%;
+		margin-top: 2%;
+		display: block;
+
+	}
+
+	.logo-text
+    {
+        font-size: 40px;
+    }
+
+
+	.presentation-multicar
+	{
+		float: right;
+		margin-right: 10%;
+		margin-top: 2%;
+		display: block;
+	}
+
+	.prorate-multicar-full-logo-msg
+	{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 900px)
+{
+	.logo
+	{
+		position: absolute;
+		left: 30%;
+		filter: drop-shadow(10px 10px 10px 10px green);
+ 
+	}
+
+	.presentation-prorate
+	{
+		float: left;
+		margin-left: 10%;
+		display: block;
+
+	}
+
+	.box-premium
+    {
+	width: 100%;
+    margin-top: 100px;
+    margin-left: 20%;
+    float:left;
+    }
+
+	.logo-text
+    {
+         font-size:  40px;
+    }
+
+
+	.presentation-multicar
+	{
+		float: right;
+		margin-right: 10%;
+		display: block;
+	}
+
+	.prorate-multicar-full-logo-msg
+	{
+		display: none;
+	}
+}
+
+
+
+@media only screen and (max-width: 800px)
+{
+	header
+	{
+		height: 150px;
+	}
+
+	.box-premium
+    {
+	width: 100%;
+	height: 100%;
+    margin-top: 100px;
+    margin-left: 0%;
+    margin-right: 0%;
+    }
+
+    button
+    {
+    	width: 100%;
+    	display: flex;
+    }
+
+    table
+    {
+    	width: 100%;
+    }
+
+    .car
+    {
+    	width: 100%
+
+    }
+
+    .premium-text
+    {
+    	display:none;
+    }
+
+	.logo
+	{
+		position: absolute;
+		left: 25%;
+ 
+	}
+
+	.presentation-prorate
+	{
+		float: left;
+		margin-left: 5%;
+		display: block;
+
+	}
+
+	.logo-text
+    {
+         font-size:  25px;
+    }
+
+
+	.presentation-multicar
+	{
+		float: right;
+		margin-right: 5%;
+		display: block;
+	}
+
+	.prorate-multicar-full-logo-msg
+	{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 600px)
+{
+	header
+	{
+		height: 220px;
+	}
+
+	.box-premium
+    {
+	width: 100%;
+	height: 100%;
+    margin-top: 100px;
+    margin-left: 0%;
+    margin-right: 0%;
+    }
+
+    .car
+    {
+    	width: 100%
+
+    }
+
+    .premium-text
+    {
+    	display:none;
+    }
+
+	.logo
+	{
+		position: absolute;
+		left: 15%;
+ 
+	}
+
+	.presentation-prorate
+	{
+		float: left;
+		margin-left: 5%;
+		margin-top: 20%;
+		display: block;
+
+	}
+
+	.presentation-multicar
+	{
+		float: right;
+		margin-right: 5%;
+		margin-top: 20%;
+		display: block;
+	}
+
+}
