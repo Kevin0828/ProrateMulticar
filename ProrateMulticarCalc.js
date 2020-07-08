@@ -1,6 +1,10 @@
 var totalCars = 2; // number of cars to calculate
 
 
+/**
+
+   adds a car to the list
+*/
 function addCar()
 {
 	totalCars++;
@@ -32,6 +36,9 @@ function addCar()
 	wrapTr.appendChild(message);
 }
 
+/**
+   DOM removes one car from being calculated
+*/
 function removeCar()
 {
     if(totalCars > 2)
@@ -43,8 +50,21 @@ function removeCar()
     {
     	alert(" You can only have a minimum of 2 cars");
     }
+}
 
 
+// When the user clicks on <button> (x), close the modal
+ function closeModal()
+{
+    document.getElementById("myModal").style.display = "none";
+}
+
+/**
+  Calculates Premium of each car inside the modal
+*/
+function calculate()
+{
+	document.getElementById("myModal").style.display = "block";
 }
 
 
