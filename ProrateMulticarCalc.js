@@ -20,14 +20,14 @@ function addCar()
 	message.setAttribute("id", "premium-text-" + totalCars);
 	message.innerHTML = "Premium";
 
-	label.setAttribute("for", "car" + totalCars);
+	label.setAttribute("for", "car" + (totalCars);
 	label.setAttribute("class", "car-label");
 	label.innerHTML = "Car " + totalCars;
 
 	input.setAttribute("class", "car");
 	input.setAttribute("placeholder", "$0.00");
 	input.setAttribute("type", "text");
-	input.setAttribute("id", "car" + totalCars);
+	input.setAttribute("id", "car" + (totalCars - 1);
 
 	classElement.appendChild(wrapTr);
 	wrapTr.appendChild(wrapTd);
