@@ -41,7 +41,7 @@ input
 	 border: none;
    	 border-bottom: 2px solid green;
    	 background-color: white;
-     box-sizing: border-box;
+         box-sizing: border-box;
  	 -webkit-transition: width .35s ease-in-out;
  	 transition: width .35s ease-in-out;
     
