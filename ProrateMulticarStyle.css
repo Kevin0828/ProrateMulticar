@@ -21,11 +21,19 @@ header
 	
 }
 
+
 img
 {
 	width: 350px;
 	height: 100px;
 }
+
+
+label
+{
+	position: absolute;
+}
+
 
 input
 {
@@ -59,12 +67,12 @@ input:focus
 
 
 
-
 button
 {
  	 background-color: #4CAF50;
  	 border: none;
  	 color: white;
+ 	 width: 100%;
  	 padding: 16px 32px;
  	 text-decoration: none;
  	 margin: 4px 2px;
@@ -86,10 +94,12 @@ button
 
 
 	background-color: #4CAF50;
-        width: 100%;
+    width: 100%;
 	height: 150px;
 	margin: 0;
 }
+
+
 
 #center
 {
@@ -117,41 +127,53 @@ button
 .cars-boxes-header
 {
 	border: 1px;
-
 }
+
 
 .box-header-text
 {
-        font-family: "Lucida Console", Courier, monospace;
+		font-family: "Lucida Console", Courier, monospace;
     	font-style: italic;
     	font-variant: small-caps;
     	font-size:  25px;
 }
 
 
-.premium-text
+
+.car-label
 {
 	font-family: "Lucida Console", Courier, monospace;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size:  15px;
+
+}
+
+
+
+.premium-text
+{
+		font-family: "Lucida Console", Courier, monospace;
     	font-style: italic;
     	font-variant: small-caps;
-	font-size:  25px;
+		font-size:  25px;
 }	
 
 .car
 {
-	float:left;
-	margin-left: 0px;
-	width: 80%;
+		float:left;
+		margin-left: 0px;
+		width: 80%;
 }
 
 
 
 .logo-text
 {
-   	 font-family: "Lucida Console", Courier, monospace;
-   	 font-style: italic;
-   	 font-variant: small-caps;
-   	 font-size:  70px;
+   		 font-family: "Lucida Console", Courier, monospace;
+   		 font-style: italic;
+   		 font-variant: small-caps;
+   		 font-size:  70px;
 
 }	
 
@@ -297,7 +319,7 @@ header
 button
 {
     	width: 100%;
-    	display: flex;
+    	
 }
 
 table
@@ -405,8 +427,8 @@ header
 	
 #logo-img
 {
-	width: 175px; 
-	height: 175px;
+	width: 150px; 
+	height: 150px;
 }
 
 .logo  
