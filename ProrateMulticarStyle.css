@@ -70,6 +70,11 @@ button
 }
 
 
+#logo-img
+{
+	width: 100px; 
+	height: 100px;
+}
 
 
 
@@ -185,7 +190,7 @@ button
 .logo
 {
 	position: absolute;
-	left: 30%;
+	left: 45%;
 	filter: drop-shadow(10px 10px 10px 10px green);
 	}
 
@@ -208,7 +213,7 @@ button
 
 .logo-text
 {
-        font-size: 40px;
+    font-size: 40px;
 }
 
 
@@ -232,7 +237,7 @@ button
 .logo
 {
 	position: absolute;
-	left: 30%;
+	left: 40%;
 	filter: drop-shadow(10px 10px 10px 10px green);
  
 }
@@ -305,7 +310,7 @@ table
 .logo
 {
 	position: absolute;
-	left: 25%;
+	left: 40%;
  
 }
 
@@ -336,7 +341,7 @@ table
 {
 header
 {
-	height: 220px;
+	height: 100px;
 }
 
 .box-premium
@@ -362,7 +367,7 @@ header
 .logo  
 {
 	position: absolute;
-	left: 10%;
+	left: 40%;
  
 }
 
@@ -381,5 +386,20 @@ header
 	margin-top: 20%;
 	display: block;
 }
+
+}
+
+
+@media only screen and (max-width: 400px)
+{
+
+.logo  
+{
+	position: absolute;
+	left: 30%;
+ 
+}
+
+
 
 }
