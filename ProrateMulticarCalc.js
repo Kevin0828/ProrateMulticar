@@ -107,8 +107,8 @@ function displayResults(downpayments, monthlypayments)
 	wrapTr.appendChild(wrapTd);
 	wrapTd.appendChild(label);
 
-	label.innerHTML = "Car (" + (i + 1) + ") downpayment $" + downpayments[i] +
-	 "-- Montly payment " + "$" + monthlypayments[i];
+	label.innerHTML = "Car (" + (i + 1) + ") downpayment $" + downpayments[i].toFixed(2) +
+	 "-- Montly payment " + "$" + monthlypayments[i].toFixed(2);
    }
 
 
