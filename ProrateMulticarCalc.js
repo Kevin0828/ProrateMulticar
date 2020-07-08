@@ -1,4 +1,4 @@
-var totalCars = 2; // number of cars to calculate
+var totalCars = 2; //  number of cars to calculate
 
 
 /**
