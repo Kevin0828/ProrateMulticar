@@ -10,6 +10,9 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
+
 </head>
 <body>
 
@@ -25,8 +28,7 @@
 
 
 			<div class = "logo">
-		    <img id = "logo-img" src = "car-logo.png"  alt="car logo"> </img>
-
+		        <img id = "logo-img" src = "car-logo.png"  alt="car logo"> </img>
 			</div>
 
            <div class = "presentation-multicar">
@@ -48,56 +50,95 @@
 			<div class="box-premium">
 
 				<table>
+
 					<thead class = "cars-boxes-header">
 						<tr>
-							<th class = ".premium-text box-header-text">Calculate MP/DP of each car</th>
+							<th class = "box-header-text">Calculate MP/DP of each car</th>
 						</tr>
-						
 					</thead>
 
 					<tbody id = "cars-boxes-body">
 
 						<tr>
-                         
 						   <td> 
 						   	<label class = "car-label" for="car0" >Car 1</label>
 						   	<input type="text" id = "car0" class = "car" placeholder="Premium">
 						   </td>
-
 						   <td class = "premium-text">Premium</td>
 						</tr>
 
 						<tr>
 							<td> 
-
 							   <label class = "car-label" for="car1" >Car 2</label>
 							   <input type="text" id = "car1" class = "car" placeholder="Premium">
 							</td>
-
 							<td class = "premium-text">Premium</td>
 						</tr>
 					</tbody>
 				</table>
 
 
+	<div class = "down-montlypayment">
+        <table>
+			<tr>
+				<td> 
+				<label class = "car-label" for="downpayment" >Total Down-payment</label>
+				<input type="text" id = "downpayment" class = "car-payment" placeholder="$0.00">
+				</td>
+				
+				<td>
+   
+				<label class = "car-label" for="monthlypayment" >Monthly-payment</label>
+				<input type="text" id = "monthlypayment" class= "car-payment" placeholder="$0.00">
+			    </td>
+
+				</tr>
+		</table>
+	</div> <!--button-calculation-box-->
+
 	<div class = "button-calculation-box">
         <table>
-			<div class="box-premium-bottons">
-
 				<tr>
-				  <td><button id = "calculateBtn">Calculate</button></td>
-				  <td><button onclick="addCar()" id = "add-car-btn"> Add car </button></td>
-				  <td><button onclick="removeCar()" id = "remove-car-btn">Remove car</button></td>
+				  <td><button onclick = "calculate()" id = "calculateBtn" >Calculate</button></td>
+				  <td><button onclick = "addCar()" id = "add-car-btn"> Add car </button></td>
+				  <td><button onclick ="removeCar()" id = "remove-car-btn">Remove car</button></td>
 				</tr>
-
 		</table>
-   </div>
-	</div>
+	</div> <!--button-calculation-box-->
+</div><!--box-premium-->
+
+
+
+
+
+<!-- The Modal -->
+<div id="myModal" style = "display:none" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <button onclick = "closeModal()" class="close"> X </button>
+      <h1> Cars Premium </h1>
+  </div>
+
+
+    <div class="modal-body">
+
+    	<table>
+    	    <tbody>
+    	    	
+    	    </tbody>
+    		
+    	</table>
+
+    </div>
+
+  </div>
 </div>
 
-	 
 
-		</div> <!-- center -->
+
+</div> <!-- center -->
 
 
 
