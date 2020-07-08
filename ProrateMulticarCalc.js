@@ -6,7 +6,7 @@ var totalCars = 2; // number of cars to calculate
    adds a car to the list
 */
 function addCar()
-{
+{ 
 	totalCars++;
 
 	var classElement = document.getElementById("cars-boxes-body");
