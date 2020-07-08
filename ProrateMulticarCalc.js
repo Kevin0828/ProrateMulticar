@@ -7,7 +7,7 @@ var totalCars = 2; // number of cars to calculate
 */
 function addCar()
 {
-	totalCars++;
+	 totalCars++;
 
 	var classElement = document.getElementById("cars-boxes-body");
 	var wrapTr = document.createElement("tr");
