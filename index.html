@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title> Prorate Multicar </title>
+
 	<meta charset="utf-8">
 
 	<link type="text/css"  rel="stylesheet" href= "ProrateMulticarStyle.css"> </link> 
@@ -61,7 +62,7 @@
 						<tr>
 						   <td> 
 						   	<label class = "car-label" for="car0" >Car 1</label>
-						   	<input type="text" id = "car0" class = "car" placeholder="Premium">
+						   	<input type="text" id = "car0" class = "car" placeholder="$0.00">
 						   </td>
 						   <td class = "premium-text">Premium</td>
 						</tr>
@@ -69,7 +70,7 @@
 						<tr>
 							<td> 
 							   <label class = "car-label" for="car1" >Car 2</label>
-							   <input type="text" id = "car1" class = "car" placeholder="Premium">
+							   <input type="text" id = "car1" class = "car" placeholder="$0.00">
 							</td>
 							<td class = "premium-text">Premium</td>
 						</tr>
@@ -84,7 +85,7 @@
 				<label class = "car-label" for="downpayment" >Total Down-payment</label>
 				<input type="text" id = "downpayment" class = "car-payment" placeholder="$0.00">
 				</td>
-				
+
 				<td>
    
 				<label class = "car-label" for="monthlypayment" >Monthly-payment</label>
@@ -124,10 +125,10 @@
     <div class="modal-body">
 
     	<table>
-    	    <tbody>
+    	    <tbody id = "modal-table-body">
+    	    	 
     	    	
     	    </tbody>
-    		
     	</table>
 
     </div>
