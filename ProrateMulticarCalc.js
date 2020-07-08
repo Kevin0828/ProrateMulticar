@@ -68,8 +68,8 @@ function calculate()
 	document.getElementById("myModal").style.display = "block";
 
 	var carsCounter = document.querySelectorAll(".car").length;
-	var downpayment = document.getElementById("downpayment").value;
-	var monthlypayment = document.getElementById("monthlypayment").value;
+	var downpayment = parseFloat(document.getElementById("downpayment").value);
+	var monthlypayment = parseFloat(document.getElementById("monthlypayment").value);
 
     var totalSum = 0;
 	var arrPremium = [];
