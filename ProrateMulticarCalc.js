@@ -6,7 +6,7 @@ var totalCars = 2; // number of cars to calculate
    adds a car to the list
 */
 function addCar()
-{ 
+{
 	totalCars++;
 
 	var classElement = document.getElementById("cars-boxes-body");
@@ -20,14 +20,14 @@ function addCar()
 	message.setAttribute("id", "premium-text-" + totalCars);
 	message.innerHTML = "Premium";
 
-	label.setAttribute("for", "car" + (totalCars);
+	label.setAttribute("for", "car" + totalCars);
 	label.setAttribute("class", "car-label");
 	label.innerHTML = "Car " + totalCars;
 
 	input.setAttribute("class", "car");
 	input.setAttribute("placeholder", "$0.00");
 	input.setAttribute("type", "text");
-	input.setAttribute("id", "car" + (totalCars - 1));
+	input.setAttribute("id", "car" + totalCars);
 
 	classElement.appendChild(wrapTr);
 	wrapTr.appendChild(wrapTd);
@@ -68,20 +68,20 @@ function calculate()
 	document.getElementById("myModal").style.display = "block";
 
 	var carsCounter = document.querySelectorAll(".car").length;
-	var downpayment = parseFloat(document.getElementById("downpayment").value);
-	var monthlypayment = parseFloat(document.getElementById("monthlypayment").value);
+	var downpayment = document.getElementById("downpayment").value;
+	var monthlypayment = document.getElementById("monthlypayment").value;
 
-        var totalSum = 0;
+    var totalSum = 0;
 	var arrPremium = [];
 	var carMonthly = [];
 	var carDown = [];
 
 	for(var i = 0; i < carsCounter; ++i)
 	{
-		arrPremium[i] = parseFloat(document.getElementById("car" + i).value);
-		totalSum += (arrPremium[i]);
+		arrPremium[i] = document.getElementById("car" + i).value;
+		totalSum =  (arrPremium[i] + totalSum);
 	}
-	
+	alert(totalSum);
 
 	for(var i = 0; i < carsCounter; ++i)
 	{
@@ -97,7 +97,7 @@ function displayResults(downpayments, monthlypayments)
 {
 	var classElement = document.getElementById("modal-table-body");
 
-   for(var i = 0; i < downpayments.length; ++i)
+   for(var i = 0; i < downpayments.length - 1; ++i)
    { 
    	 var wrapTr = document.createElement("tr");
 	 var wrapTd = document.createElement("td");
@@ -107,8 +107,8 @@ function displayResults(downpayments, monthlypayments)
 	wrapTr.appendChild(wrapTd);
 	wrapTd.appendChild(label);
 
-	label.innerHTML = "Car (" + (i + 1) + ") downpayment $" + downpayments[i].toFixed(2) +
-	 "-- Montly payment " + "$" + monthlypayments[i].toFixed(2);
+	label.innerHTML = "Car (" + (i + 1) + ") downpayment $" + downpayments[i] +
+	 "-- Montly payment " + "$" + monthlypayments[i];
    }
 
 
