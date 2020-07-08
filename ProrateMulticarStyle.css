@@ -1,6 +1,6 @@
 body
 {
-	background-color: #cfeeff;
+	background-color: #4CAF50;
 	margin:0;
 }
 
@@ -15,7 +15,7 @@ header
 	background-color: #4CAF50;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 135px;
+	height: 150px;
 	position: relative;
 	margin:0;
 }
@@ -31,8 +31,8 @@ input
 	 height: 40px;
 	 border: none;
    	 border-bottom: 2px solid green;
-   	 background-color: #8fb4ff;
-         box-sizing: border-box;
+   	 background-color: white;
+     box-sizing: border-box;
  	 -webkit-transition: width .35s ease-in-out;
  	 transition: width .35s ease-in-out;
     
@@ -47,12 +47,13 @@ input::placeholder
 input::hover
 {
 
+
 }
 
 input:focus
 {
 	width: 95%;
-	background-color: #cfeeff;
+	background-color: #61ff67;
 }
 
 
@@ -72,8 +73,9 @@ button
 
 #logo-img
 {
-	width: 150px; 
-	height: 150px;
+	width: 100px; 
+	height: 100px;
+	float: left;
 }
 
 
@@ -81,14 +83,14 @@ button
 #footer
 {
 	background-color: #4CAF50;
-        width: 100%;
+    width: 100%;
 	height: 150px;
 	margin: 0;
 }
 
 #center
 {
-	background-color: #8fb4ff;
+	background-color: white;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	width: 100%;
@@ -146,8 +148,8 @@ button
    	 font-family: "Lucida Console", Courier, monospace;
    	 font-style: italic;
    	 font-variant: small-caps;
-   	 font-size:  80px;
-   	 float:right;
+   	 font-size:  70px;
+
 }	
 
 
@@ -167,16 +169,14 @@ button
 
 .prorate-multicar-full-logo-msg
 {
-	float: left;
-	margin-left: 20%;
+	float: right;
+	margin-right: 10%;
 }
 
  
 .logo
 {
    	float: left;
-	width: 50%;
-	height: 50%;
 	margin-left: 10px;
 	margin-top: 10px;
 	position: relative;
