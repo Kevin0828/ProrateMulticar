@@ -27,7 +27,7 @@ function addCar()
 	input.setAttribute("class", "car");
 	input.setAttribute("placeholder", "$0.00");
 	input.setAttribute("type", "text");
-	input.setAttribute("id", "car" + (totalCars - 1));
+	input.setAttribute("id", "car" + totalCars);
 
 	classElement.appendChild(wrapTr);
 	wrapTr.appendChild(wrapTd);
