@@ -78,10 +78,10 @@ function calculate()
 
 	for(var i = 0; i < carsCounter; ++i)
 	{
-		arrPremium[i] = parseInt(document.getElementById("car" + i).value);
+		arrPremium[i] = parseFloat(document.getElementById("car" + i).value);
 		totalSum += (arrPremium[i]);
 	}
-	alert(totalSum);
+	
 
 	for(var i = 0; i < carsCounter; ++i)
 	{
