@@ -71,7 +71,7 @@ function calculate()
 	var downpayment = parseFloat(document.getElementById("downpayment").value);
 	var monthlypayment = parseFloat(document.getElementById("monthlypayment").value);
 
-    var totalSum = 0;
+        var totalSum = 0;
 	var arrPremium = [];
 	var carMonthly = [];
 	var carDown = [];
