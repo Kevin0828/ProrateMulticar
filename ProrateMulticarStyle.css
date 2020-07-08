@@ -119,7 +119,7 @@ button
 
 .box-header-text
 {
-	font-family: "Lucida Console", Courier, monospace;
+		font-family: "Lucida Console", Courier, monospace;
     	font-style: italic;
     	font-variant: small-caps;
     	font-size:  25px;
@@ -128,27 +128,27 @@ button
 
 .premium-text
 {
-	font-family: "Lucida Console", Courier, monospace;
+		font-family: "Lucida Console", Courier, monospace;
     	font-style: italic;
     	font-variant: small-caps;
-	font-size:  25px;
+		font-size:  25px;
 }	
 
 .car
 {
-	float:left;
-	margin-left: 0px;
-	width: 80%;
+		float:left;
+		margin-left: 0px;
+		width: 80%;
 }
 
 
 
 .logo-text
 {
-   	 font-family: "Lucida Console", Courier, monospace;
-   	 font-style: italic;
-   	 font-variant: small-caps;
-   	 font-size:  70px;
+   		 font-family: "Lucida Console", Courier, monospace;
+   		 font-style: italic;
+   		 font-variant: small-caps;
+   		 font-size:  70px;
 
 }	
 
@@ -191,7 +191,7 @@ button
 .logo
 {
 	position: absolute;
-	left: 45%;
+	left: 40%;
 	filter: drop-shadow(10px 10px 10px 10px green);
 	}
 
@@ -201,6 +201,12 @@ button
    	 margin-top: 100px;
    	 margin-left: 30%;
    	 float:left;
+}
+
+#logo-img
+{
+	width: 150px; 
+	height: 150px;
 }
 
 .presentation-prorate
@@ -324,7 +330,7 @@ table
 
 .logo-text
 {
-        font-size:  25px;
+    font-size:  25px;
 }
 
 
@@ -403,7 +409,7 @@ header
 .logo  
 {
 	position: absolute;
-	left: 27%;
+	left: 25%;
  
 }
 
