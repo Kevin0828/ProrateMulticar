@@ -7,7 +7,7 @@ var totalCars = 2; // number of cars to calculate
 */
 function addCar()
 {
-	 totalCars++;
+	totalCars++;
 
 	var classElement = document.getElementById("cars-boxes-body");
 	var wrapTr = document.createElement("tr");
@@ -25,7 +25,7 @@ function addCar()
 	label.innerHTML = "Car " + totalCars;
 
 	input.setAttribute("class", "car");
-	input.setAttribute("placeholder", "Premium");
+	input.setAttribute("placeholder", "$0.00");
 	input.setAttribute("type", "text");
 	input.setAttribute("id", "car" + totalCars);
 
@@ -57,6 +57,7 @@ function removeCar()
  function closeModal()
 {
     document.getElementById("myModal").style.display = "none";
+
 }
 
 /**
@@ -65,6 +66,52 @@ function removeCar()
 function calculate()
 {
 	document.getElementById("myModal").style.display = "block";
+
+	var carsCounter = document.querySelectorAll(".car").length;
+	var downpayment = document.getElementById("downpayment").value;
+	var monthlypayment = document.getElementById("monthlypayment").value;
+
+    var totalSum = 0;
+	var arrPremium = [];
+	var carMonthly = [];
+	var carDown = [];
+
+	for(var i = 0; i < carsCounter; ++i)
+	{
+		arrPremium[i] = parseInt(document.getElementById("car" + i).value);
+		totalSum += (arrPremium[i]);
+	}
+	alert(totalSum);
+
+	for(var i = 0; i < carsCounter; ++i)
+	{
+		carMonthly[i] = ((arrPremium[i] / totalSum) * monthlypayment);
+		carDown[i] = ((arrPremium[i] / totalSum) * downpayment);
+	}
+
+	displayResults(carDown,carMonthly);
+}
+
+
+function displayResults(downpayments, monthlypayments)
+{
+	var classElement = document.getElementById("modal-table-body");
+
+   for(var i = 0; i < downpayments.length - 1; ++i)
+   { 
+   	 var wrapTr = document.createElement("tr");
+	 var wrapTd = document.createElement("td");
+	 var label = document.createElement("p");
+
+	classElement.appendChild(wrapTr);
+	wrapTr.appendChild(wrapTd);
+	wrapTd.appendChild(label);
+
+	label.innerHTML = "Car (" + (i + 1) + ") downpayment $" + downpayments[i] +
+	 "-- Montly payment " + "$" + monthlypayments[i];
+   }
+
+
 }
 
 
