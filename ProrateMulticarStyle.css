@@ -41,6 +41,13 @@ label
 	position: absolute;
 }
 
+#rights
+{
+	float: left;
+	font-size: 20px;
+
+
+}
 
 input
 {
@@ -52,7 +59,6 @@ input
  	 -webkit-transition: width .35s ease-in-out;
  	 transition: width .35s ease-in-out;
  	 padding-top: 15px;
-    
 }
 
 input::placeholder
@@ -63,7 +69,6 @@ input::placeholder
 
 input::hover
 {
-
 
 }
 
@@ -80,10 +85,9 @@ input::hover
 }
 
 
-
-button
+.btnCenter
 {
- 	 background-color: #4CAF50;
+	 background-color: #4CAF50;
  	 border: none;
  	 color: white;
  	 width: 100%;
@@ -92,9 +96,10 @@ button
  	 margin: 4px 2px;
  	 cursor: pointer;
  	 border-radius: 10px;
+
 }
 
-button:hover
+.btnCenter:hover
 {
 	font-size: 80%;
 }
@@ -123,7 +128,6 @@ button:hover
 	text-align: center;
 	font-size: 15px;
 	padding: 0;
-
 }
 
 
@@ -265,99 +269,6 @@ button:hover
 
 
 
-@media only screen and (max-width: 1200px)
-{
-
-.logo
-{
-	position: absolute;
-	left: 40%;
-	filter: drop-shadow(10px 10px 10px 10px green);
-}
-
-button
-{
-	flex-direction: column;
-	display: flex
-}
-
-.box-premium
-{
-	 width: 100%;
-   	 margin-top: 100px;
-   	 margin-left: 30%;
-   	 float:left;
-}
-
-#logo-img
-{
-	width: 150px; 
-	height: 150px;
-}
-
-.presentation-prorate
-{
-	float: left;
-	margin-left: 15%;
-	margin-top: 2%;
-	display: block;
-
-}
-
-.logo-text
-{
-    font-size: 40px;
-}
-
-
-.presentation-multicar
-{
-	float: right;
-	margin-right: 10%;
-	margin-top: 2%;
-	display: block;
-}
-
-.prorate-multicar-full-logo-msg
-{
-	display: none;
-}
-	
-}
-
-@media only screen and (max-width: 900px)
-{
-.logo
-{
-	position: absolute;
-	left: 40%;
-	filter: drop-shadow(10px 10px 10px 10px green);
-}
-
-.presentation-prorate
-{
-	float: left;
-	margin-left: 10%;
-	display: block;
-}
-
-.box-premium
-{
- 	width: 100%;
-    margin-top: 100px;
-    margin-left: 20%;
-    float:left;
-}
-
-.presentation-multicar
-{
-	float: right;
-	margin-right: 10%;
-	display: block;
-}
-
-}
-
 /* modal ************************************************************/
 
 
@@ -399,7 +310,7 @@ button
   color: white;
   float: right;
   width: 5px;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -428,10 +339,6 @@ button
 {
 	border: 1px solid black;
 }
-
-
-
-
 
 .modal-body 
 {
@@ -471,6 +378,99 @@ button
 
 
 
+@media only screen and (max-width: 1200px)
+{
+
+.logo
+{
+	position: absolute;
+	left: 40%;
+	filter: drop-shadow(10px 10px 10px 10px green);
+}
+
+.box-premium
+{
+	 width: 100%;
+   	 margin-top: 100px;
+   	 margin-left: 30%;
+   	 float:left;
+}
+
+#logo-img
+{
+	width: 150px; 
+	height: 150px;
+}
+
+.presentation-prorate
+{
+	float: left;
+	margin-left: 15%;
+	margin-top: 2%;
+	display: block;
+
+}
+
+
+.logo-text
+{
+    font-size: 40px;
+}
+
+
+.presentation-multicar
+{
+	float: right;
+	margin-right: 10%;
+	margin-top: 2%;
+	display: block;
+}
+
+.prorate-multicar-full-logo-msg
+{
+	display: none;
+}
+	
+}
+
+
+
+@media only screen and (max-width: 900px)
+{
+.logo
+{
+	position: absolute;
+	left: 40%;
+	filter: drop-shadow(10px 10px 10px 10px green);
+}
+
+.presentation-prorate
+{
+	float: left;
+	margin-left: 10%;
+	display: block;
+}
+
+.box-premium
+{
+ 	width: 100%;
+    margin-top: 100px;
+    margin-left: 20%;
+    float:left;
+}
+
+.presentation-multicar
+{
+	float: right;
+	margin-right: 10%;
+	display: block;
+}
+
+}
+
+
+
+
 
 @media only screen and (max-width: 800px)
 {
@@ -478,7 +478,7 @@ button
 
 header
 {
-	height: 150px;
+	height: 100px;
 }
 
 .box-premium
@@ -490,29 +490,22 @@ header
   	  margin-right: 0%;
 }
 
-
-
-
 button
 {
-    	width: 100%;	
+    width: 100%;	
 }
 
 table
 {
-    	width: 100%;
-    	box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .car
 {
-    	width: 100%;
+    width: 100%;
 }
 
-.premium-text
-{
-    	display: none;
-}
 
 .logo
 {
@@ -529,7 +522,7 @@ table
 
 .logo-text
 {
-    font-size:  25px;
+    font-size: 25px;
 }
 
 
@@ -539,8 +532,10 @@ table
 	margin-right: 5%;
 	display: block;
 }
+
 	
 }
+
 
 @media only screen and (max-width: 600px)
 {
@@ -552,22 +547,18 @@ header
 
 .box-premium
 {
-       width: 100%;
-       height: 100%;
-       margin-top: 100px;
-       margin-left: 0%;
-       margin-right: 0%;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
 .car
 {
-    	width: 100%
+    width: 100%
 }
 
-.premium-text
-{
-    	display:none;
-}
 
 .logo  
 {
@@ -606,7 +597,7 @@ header
 .logo  
 {
 	position: absolute;
-	left: 25%;
+	left: 30%;
 }
 
 }
