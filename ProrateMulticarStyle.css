@@ -61,6 +61,8 @@ input
  	 padding-top: 15px;
 }
 
+
+
 input::placeholder
 {
 	text-align: center;
@@ -71,6 +73,8 @@ input::hover
 {
 
 }
+
+
 
 .car:focus
 {
@@ -479,6 +483,12 @@ input::hover
 header
 {
 	height: 100px;
+}
+	
+	
+.premium-txt-hide
+{
+      display: none;
 }
 
 .box-premium
