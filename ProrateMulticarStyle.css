@@ -1,3 +1,4 @@
+
 body
 {
 	background-color: #4CAF50;
@@ -21,13 +22,19 @@ header
 	
 }
 
-
 img
 {
 	width: 350px;
 	height: 100px;
 }
 
+.social-media
+{
+	width: 40px;
+	height: 40px;
+	float: right;
+	margin:5px;
+}
 
 label
 {
@@ -41,9 +48,10 @@ input
 	 border: none;
    	 border-bottom: 2px solid green;
    	 background-color: white;
-         box-sizing: border-box;
+     box-sizing: border-box;
  	 -webkit-transition: width .35s ease-in-out;
  	 transition: width .35s ease-in-out;
+ 	 padding-top: 15px;
     
 }
 
@@ -86,6 +94,11 @@ button
  	 border-radius: 10px;
 }
 
+button:hover
+{
+	font-size: 80%;
+}
+
 
 #logo-img
 {
@@ -98,14 +111,20 @@ button
 
 #footer
 {
-
-
 	background-color: #4CAF50;
     width: 100%;
 	height: 150px;
 	margin: 0;
 }
 
+.modal-results
+{
+	width: 120px;
+	text-align: center;
+	font-size: 15px;
+	padding: 0;
+
+}
 
 
 #center
@@ -118,6 +137,8 @@ button
 	height: auto;
 	display: flex;
 }
+
+
 
 
 
@@ -165,6 +186,18 @@ button
 		font-size:  25px;
 }	
 
+
+
+.modal-result-title
+{
+	font-family: "Lucida Console", Courier, monospace;
+    font-style: italic;
+    font-variant: small-caps;
+	font-size:  20px;
+}
+
+
+
 .car
 {
 		float:left;
@@ -197,7 +230,6 @@ button
    		 font-style: italic;
    		 font-variant: small-caps;
    		 font-size:  70px;
-
 }	
 
 
@@ -228,7 +260,6 @@ button
 	margin-left: 10px;
 	margin-top: 10px;
 	position: relative;
-
 	filter: drop-shadow(8px 8px 10px green);
 }
 
@@ -236,12 +267,19 @@ button
 
 @media only screen and (max-width: 1200px)
 {
+
 .logo
 {
 	position: absolute;
 	left: 40%;
 	filter: drop-shadow(10px 10px 10px 10px green);
-	}
+}
+
+button
+{
+	flex-direction: column;
+	display: flex
+}
 
 .box-premium
 {
@@ -294,7 +332,6 @@ button
 	position: absolute;
 	left: 40%;
 	filter: drop-shadow(10px 10px 10px 10px green);
- 
 }
 
 .presentation-prorate
@@ -325,7 +362,8 @@ button
 
 
 /* The Modal (background) */
-.modal {
+.modal 
+{
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -343,7 +381,8 @@ button
 }
 
 /* Modal Content */
-.modal-content {
+.modal-content 
+{
   position: fixed;
   bottom: 0;
   background-color: #fefefe;
@@ -355,7 +394,8 @@ button
 }
 
 /* The Close Button */
-.close {
+.close 
+{
   color: white;
   float: right;
   width: 5px;
@@ -371,14 +411,34 @@ button
   cursor: pointer;
 }
 
-.modal-header {
+.modal-header 
+{
   padding: 2px 16px;
   background-color: #5cb85c;
   color: white;
 }
 
-.modal-body {
+#modal-table
+{
+	border: 10px;
+	border-color: red;
+}
+
+#modal-table-body
+{
+	border: 1px solid black;
+}
+
+
+
+
+
+.modal-body 
+{
 	padding: 2px 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Add Animation */
@@ -414,6 +474,8 @@ button
 
 @media only screen and (max-width: 800px)
 {
+
+
 header
 {
 	height: 150px;
@@ -428,20 +490,12 @@ header
   	  margin-right: 0%;
 }
 
-.button-calculation-box
-{
-	display: flex;
-    flex-wrap: wrap;
 
-}
 
 
 button
 {
-    	width: 100%;
-    	
-
-    	
+    	width: 100%;	
 }
 
 table
@@ -452,20 +506,18 @@ table
 
 .car
 {
-    	width: 100%
-
+    	width: 100%;
 }
 
 .premium-text
 {
-    	display:none;
+    	display: none;
 }
 
 .logo
 {
 	position: absolute;
 	left: 40%;
- 
 }
 
 .presentation-prorate
@@ -486,13 +538,13 @@ table
 	float: right;
 	margin-right: 5%;
 	display: block;
-
 }
 	
 }
 
 @media only screen and (max-width: 600px)
 {
+
 header
 {
 	height: 100px;
@@ -510,7 +562,6 @@ header
 .car
 {
     	width: 100%
-
 }
 
 .premium-text
@@ -522,7 +573,6 @@ header
 {
 	position: absolute;
 	left: 35%;
- 
 }
 
 .presentation-prorate
@@ -557,9 +607,6 @@ header
 {
 	position: absolute;
 	left: 25%;
- 
 }
-
-
 
 }
