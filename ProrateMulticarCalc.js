@@ -61,7 +61,7 @@ function removeCar()
      
     for(var i = 0; i < carsCounter; ++i)
     {
-     document.getElementById("modal-table-body").deleteRow(i);
+     document.getElementById("modal-table-body").deleteRow(0);
     }
 
 }
