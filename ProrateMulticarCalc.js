@@ -44,7 +44,7 @@ function removeCar()
     if(totalCars > 2)
     {
     	totalCars -= (totalCars > 0) ? 1 : 0;
-	    document.getElementById("cars-boxes-body").deleteRow(totalCars);
+	document.getElementById("cars-boxes-body").deleteRow(totalCars);
      }
     else
     {
@@ -57,6 +57,12 @@ function removeCar()
  function closeModal()
 {
     document.getElementById("myModal").style.display = "none";
+    var carsCounter = document.querySelectorAll(".car").length;
+     
+    for(var i = 0; i < carsCounter; ++i)
+    {
+     document.getElementById("modal-table-body").deleteRow(i);
+    }
 
 }
 
