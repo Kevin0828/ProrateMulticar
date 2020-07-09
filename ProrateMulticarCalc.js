@@ -97,7 +97,7 @@ function displayResults(downpayments, monthlypayments)
 {
 	var classElement = document.getElementById("modal-table-body");
 
-   for(var i = 0; i < downpayments.length - 1; ++i)
+   for(var i = 0; i < downpayments.length; ++i)
    { 
    	 var wrapTr = document.createElement("tr");
 	 var wrapTd = document.createElement("td");
