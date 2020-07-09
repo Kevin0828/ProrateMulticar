@@ -49,6 +49,8 @@
 
 			<div class="box-premium">
 
+				<form id = "form-user-input-cars">
+
 				<table>
 
 					<thead class = "cars-boxes-header">
@@ -81,8 +83,12 @@
 					</tbody>
 				</table>
 
+		</form>
 
-	<div class = "down-montlypayment">
+
+	<div id = "down-montlypayment">
+
+	<form id = "form-user-input-DP-MP">
         <table>
 			<tr>
 				<td> 
@@ -99,15 +105,27 @@
 				</tr>
 		</table>
 	</div> <!--button-calculation-box-->
+</form>
 
 	<div class = "button-calculation-box">
         <table id = "table-button">
 			   <tr>
 				 <td>
-				 <button onclick = "calculate()" id = "calculateBtn" >Calculate</button></td>
-				 <td><button onclick = "addCar()" id = "add-car-btn"> Add car </button></td>
-				 <td><button onclick ="removeCar()" id = "remove-car-btn">Remove car</button></td>
-				 <td><button onclick ="resetValues()" id = "reset-car-btn">Reset</button></td>
+				 <button onclick = "calculate()" class = "btnCenter "  id = "calculateBtn" >Calculate</button>
+				</td>
+				<td>
+					<button onclick = "addCar()" class = "btnCenter "  id = "add-car-btn"> Add car </button>
+				</td>
+				
+			</tr>
+
+			<tr>
+				<td>
+				 <button onclick = "resetValues()" class = "btnCenter "  id = "resetValuesBtn" >Reset</button>
+				</td>
+				 <td>
+				 	<button  onclick ="removeCar()" class = "btnCenter " id = "remove-car-btn">Remove car</button>
+				 </td>
 			   </tr>
 		</table>
 	</div> <!--button-calculation-box-->
@@ -166,24 +184,28 @@
 		<div id = "footer">
 			<div id = "developer-info">
 				<a href = "https://www.linkedin.com/in/kevinfontela/" >
-				 <img class = "social-media" src = "ld.png" alt = "linked-in"> 
+				 <img class = "social-media" src = "https://cdn.icon-icons.com/icons2/2415/PNG/512/linkedin_original_logo_icon_146435.png" alt = "linked-in"> 
 				</a>
 
 				<a href = "https://www.facebook.com/kevin.fontela.21/"> 
-					<img class = "social-media" src = "fb.png"
+					<img class = "social-media" src = "https://cdn.icon-icons.com/icons2/2415/PNG/512/facebook_plain_logo_icon_146525.png"
 				 alt = "facebook"> 
 				</a>
 
 				<a href = "https://www.instagram.com/fontelakevin/" >
-					<img class = "social-media" src = "ig.png" 
+					<img class = "social-media" src = "https://cdn.icon-icons.com/icons2/1211/PNG/512/1491580635-yumminkysocialmedia26_83102.png" 
 					alt = "instagram">
 				 </a>
 
 				<a href = "https://github.com/Kevin0828" > 
-					<img class = "social-media" src = "gh.png" alt = "github">
+					<img class = "social-media" src = "https://cdn.icon-icons.com/icons2/936/PNG/512/github-logo_icon-icons.com_73546.png" alt = "github">
 				</a>
+
 			</div>
 
+		<div id = "rights" class = "premium-text">
+				<p>&copy; 2020 Prorate Multicar. @KevinFontela</p>
+		</div>
 
 
 
