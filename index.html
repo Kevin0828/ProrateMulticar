@@ -61,10 +61,12 @@
 
 						<tr>
 						   <td> 
-						   	<label class = "car-label" for="car0" >Car 1</label>
-						   	<input type="text" id = "car0" class = "car" placeholder="$0.00">
+						   	 <label class = "car-label" for="car0" >Car 1</label>
+						   	 <input type="text" id = "car0" class = "car" placeholder="$0.00">
 						   </td>
-						   <td class = "premium-text">Premium</td>
+						   <td>
+						     <label class="premium-text">Premium</label>
+						  </td>
 						</tr>
 
 						<tr>
@@ -72,7 +74,9 @@
 							   <label class = "car-label" for="car1" >Car 2</label>
 							   <input type="text" id = "car1" class = "car" placeholder="$0.00">
 							</td>
-							<td class = "premium-text">Premium</td>
+							<td>
+						     <label class="premium-text">Premium</label>
+						  </td>
 						</tr>
 					</tbody>
 				</table>
@@ -82,13 +86,13 @@
         <table>
 			<tr>
 				<td> 
-				<label class = "car-label" for="downpayment" >Total Down-payment</label>
+				<label class = "car-label" for="downpayment" >Policy Down-payment</label>
 				<input type="text" id = "downpayment" class = "car-payment" placeholder="$0.00">
 				</td>
 
 				<td>
    
-				<label class = "car-label" for="monthlypayment" >Monthly-payment</label>
+				<label class = "car-label" for="monthlypayment" >Policy Monthly-payment</label>
 				<input type="text" id = "monthlypayment" class= "car-payment" placeholder="$0.00">
 			    </td>
 
@@ -97,12 +101,14 @@
 	</div> <!--button-calculation-box-->
 
 	<div class = "button-calculation-box">
-        <table>
-				<tr>
-				  <td><button onclick = "calculate()" id = "calculateBtn" >Calculate</button></td>
-				  <td><button onclick = "addCar()" id = "add-car-btn"> Add car </button></td>
-				  <td><button onclick ="removeCar()" id = "remove-car-btn">Remove car</button></td>
-				</tr>
+        <table id = "table-button">
+			   <tr>
+				 <td>
+				 <button onclick = "calculate()" id = "calculateBtn" >Calculate</button></td>
+				 <td><button onclick = "addCar()" id = "add-car-btn"> Add car </button></td>
+				 <td><button onclick ="removeCar()" id = "remove-car-btn">Remove car</button></td>
+				 <td><button onclick ="resetValues()" id = "reset-car-btn">Reset</button></td>
+			   </tr>
 		</table>
 	</div> <!--button-calculation-box-->
 </div><!--box-premium-->
@@ -119,12 +125,27 @@
     <div class="modal-header">
       <button onclick = "closeModal()" class="close"> X </button>
       <h1> Cars Premium </h1>
-  </div>
+    </div>
 
 
     <div class="modal-body">
 
-    	<table>
+    	<table id = "modal-table">
+    		<thead>
+    		<tr>
+    			<th>
+    				<p class = "modal-result-title">Payments:</p>
+    			</th>
+    			<th>
+    				<p class = "modal-result-title">Down </p>
+    			</th>
+    			<th>
+    				<p class = "modal-result-title">Monthly </p>
+    			</th>
+    		</tr>
+    		
+    	</thead>
+
     	    <tbody id = "modal-table-body">
     	    	 
     	    	
@@ -143,6 +164,28 @@
 
 
 		<div id = "footer">
+			<div id = "developer-info">
+				<a href = "https://www.linkedin.com/in/kevinfontela/" >
+				 <img class = "social-media" src = "https://cdn.icon-icons.com/icons2/2415/PNG/512/linkedin_original_logo_icon_146435.png" alt = "linked-in"> 
+				</a>
+
+				<a href = "https://www.facebook.com/kevin.fontela.21/"> 
+					<img class = "social-media" src = "https://cdn.icon-icons.com/icons2/2415/PNG/512/facebook_plain_logo_icon_146525.png"
+				 alt = "facebook"> 
+				</a>
+
+				<a href = "https://www.instagram.com/fontelakevin/" >
+					<img class = "social-media" src = "https://cdn.icon-icons.com/icons2/1211/PNG/512/1491580635-yumminkysocialmedia26_83102.png" 
+					alt = "instagram">
+				 </a>
+
+				<a href = "https://github.com/Kevin0828" > 
+					<img class = "social-media" src = "https://cdn.icon-icons.com/icons2/936/PNG/512/github-logo_icon-icons.com_73546.png" alt = "github">
+				</a>
+			</div>
+
+
+
 
 		</div> <!-- footer -->
 
