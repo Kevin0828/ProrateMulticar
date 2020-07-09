@@ -68,20 +68,20 @@ function calculate()
 	document.getElementById("myModal").style.display = "block";
 
 	var carsCounter = document.querySelectorAll(".car").length;
-	var downpayment = document.getElementById("downpayment").value;
-	var monthlypayment = document.getElementById("monthlypayment").value;
+	var downpayment = parseFloat(document.getElementById("downpayment").value);
+	var monthlypayment = parseFloat(document.getElementById("monthlypayment").value);
 
-    var totalSum = 0;
+        var totalSum = 0;
 	var arrPremium = [];
 	var carMonthly = [];
 	var carDown = [];
 
 	for(var i = 0; i < carsCounter; ++i)
 	{
-		arrPremium[i] = document.getElementById("car" + i).value;
+		arrPremium[i] = parseFloat(document.getElementById("car" + i).value);
 		totalSum =  (arrPremium[i] + totalSum);
 	}
-	alert(totalSum);
+	
 
 	for(var i = 0; i < carsCounter; ++i)
 	{
@@ -107,8 +107,8 @@ function displayResults(downpayments, monthlypayments)
 	wrapTr.appendChild(wrapTd);
 	wrapTd.appendChild(label);
 
-	label.innerHTML = "Car (" + (i + 1) + ") downpayment $" + downpayments[i] +
-	 "-- Montly payment " + "$" + monthlypayments[i];
+	label.innerHTML = "Car (" + (i + 1) + ") downpayment $" + downpayments[i].toFixed(2) +
+	 "-- Montly payment " + "$" + monthlypayments[i].toFixed(2);
    }
 
 
