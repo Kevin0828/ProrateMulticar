@@ -19,7 +19,8 @@ function addCar()
 	var input = document.createElement("INPUT");
 	var message = document.createElement("label")
 
-	message.setAttribute("class", "premium-text");
+	message.setAttribute("class", "premium-text premium-txt-hide");
+	   
 	message.innerHTML = "Premium";
 
 	label.setAttribute("for", "car" + carsCounter);
