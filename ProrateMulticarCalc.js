@@ -1,6 +1,7 @@
 let MAX_CARS = 10;
 let MIN_CARS = 2;
 
+
 /**
    adds a car to the list
 */
@@ -12,8 +13,8 @@ function addCar()
    {
 	var table = document.getElementById("cars-boxes-body");
 	var row = table.insertRow(-1);
-    var cell = row.insertCell(-1);
-    var cell1 = row.insertCell(-1);
+        var cell = row.insertCell(-1);
+        var cell1 = row.insertCell(-1);
 	var label = document.createElement("label");
 	var input = document.createElement("INPUT");
 	var message = document.createElement("label")
@@ -42,7 +43,7 @@ else
 }
 
 /**
-   DOM removes one car from being calculated
+   DOM removes one car from html form 
 */
 function removeCar()
 {
@@ -82,7 +83,7 @@ function calculate()
 	var carsCounter = document.querySelectorAll(".car").length;
 	var downpayment = parseFloat(document.getElementById("downpayment").value);
 	var monthlypayment = parseFloat(document.getElementById("monthlypayment").value);
-    var totalSum = 0;
+        var totalSum = 0;
 	var arrPremium = [];
 	var carMonthly = [];
 	var carDown = [];
@@ -103,16 +104,20 @@ function calculate()
 }
 
 
+/**
+  Creates new elements inside the modal table with the calculated down payments
+  and monthly payments
+*/
 function displayResults(downpayments, monthlypayments)
 {
-	var table = document.getElementById("modal-table-body");
+    var table = document.getElementById("modal-table-body");
 
    for(var i = 0; i < downpayments.length; ++i)
    { 
 	 var row = table.insertRow(-1);
-     var car_cell = row.insertCell(-1);
-     var down_cell = row.insertCell(-1);
-     var mp_cell = row.insertCell(-1);
+         var car_cell = row.insertCell(-1);
+         var down_cell = row.insertCell(-1);
+         var mp_cell = row.insertCell(-1);
 
 	 var car_label = document.createElement("p");
 	 car_label.setAttribute("class", "premium-text modal-results");
@@ -136,11 +141,13 @@ function displayResults(downpayments, monthlypayments)
 }
 
 
+/**
+   Resets values from inputs
+**/
 function resetValues()
 {
-	document.getElementById("downpayment").innerHTML = '';
-	document.getElementById("monthlypayment").innerHTML = '';
-	document.getElementsByClassName("car").innerHTML = '';
+	document.getElementById("form-user-input-cars").reset();
+	document.getElementById("form-user-input-DP-MP").reset();
 }
 
 
