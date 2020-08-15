@@ -1,5 +1,5 @@
-let MAX_CARS = 10;
-let MIN_CARS = 2;
+const MAX_CARS = 10;
+const MIN_CARS = 2;
 
 
 /**
@@ -136,7 +136,7 @@ function displayResults(downpayments, monthlypayments)
 	 monthlypayments[i] = (monthlypayments[i] > 0) ? monthlypayments[i] : 0.00;
 
 	 car_label.innerHTML = "Vehicle " + (i + 1);
-     down_label.innerHTML = "$" + downpayments[i].toFixed(2);
+    	 down_label.innerHTML = "$" + downpayments[i].toFixed(2);
 	 mp_label.innerHTML = "$" + monthlypayments[i].toFixed(2);
    }
 }
